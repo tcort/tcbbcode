@@ -53,3 +53,15 @@ BBCode to HTML converter.
 - all tags output from this module are marked with a CSS classes that correspond to their code
   - e.g. `[i]` results in a `<span>` tag with class `bbcode-i`
 
+#### Usage Example
+
+```
+const bbcode = new BBCode();
+
+try {
+    const output = bbcode.parse(input);
+    // ... do something with the output
+} catch (err) {
+    // ... do something with the error
+}
+```
