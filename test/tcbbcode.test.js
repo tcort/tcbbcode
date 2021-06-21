@@ -46,9 +46,9 @@ if (process.env.NODE_ENV === 'test') {
             ['Spoiler', '[spoiler]example[/spoiler]', '<span class="bbcode-spoiler">example</span>'],
             ['Link','[url]https://example.com/[/url]', '<a class="bbcode-url" href="https://example.com/">https://example.com/</a>'],
             ['Link','[url=https://example.com/]example[/url]', '<a class="bbcode-url" href="https://example.com/">example</a>'],
-            ['Image','[img]https://example.com/example/example.png[/img]', '<a class="bbcode-img" src="https://example.com/example/example.png" alt="example.png" />'],
-            ['Image','[img=640x480]https://example.com/example/example.png[/img]', '<a class="bbcode-img" src="https://example.com/example/example.png" alt="example.png" width="640" height="480" />'],
-            ['Image','[img width=640 height=480]https://example.com/example/example.png[/img]', '<a class="bbcode-img" src="https://example.com/example/example.png" alt="example.png" width="640" height="480" />'],
+            ['Image','[img]https://example.com/example/example.png[/img]', '<img class="bbcode-img" src="https://example.com/example/example.png" alt="example.png" />'],
+            ['Image','[img=640x480]https://example.com/example/example.png[/img]', '<img class="bbcode-img" src="https://example.com/example/example.png" alt="example.png" width="640" height="480" />'],
+            ['Image','[img width=640 height=480]https://example.com/example/example.png[/img]', '<img class="bbcode-img" src="https://example.com/example/example.png" alt="example.png" width="640" height="480" />'],
             ['Youtube','[youtube]dQw4w9WgXcQ[/youtube]', '<div class="bbcode-youtube"><iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>'],
 
         ])('| *%s* | `%s` | `%s` |', (description, bbcode, expected) => {
