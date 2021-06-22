@@ -6,6 +6,9 @@
   "directories": {
     "lib": "lib"
   },
+  "bin": {
+    "tcbbcode": "bin/tcbbcode.js"
+  },
   "scripts": {
     "test": "jest"
   },
