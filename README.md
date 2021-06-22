@@ -53,10 +53,10 @@ BBCode to HTML converter.
 #### Usage Example
 
 ```
-const bbcode = new BBCode();
+const bbcode = require('tcbbcode');
 
 try {
-    const output = bbcode.parse(input);
+    const output = bbcode(input);
     // ... do something with the output
 } catch (err) {
     // ... do something with the error

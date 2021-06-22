@@ -10,9 +10,7 @@ if (process.env.NODE_ENV === 'test') {
         test.each(bbcode_examples.concat([
             // handles empty input
             ['','',''],
-        ]))('| *%s* | `%s` | `%s` |', (description, bbcode, expected) => {
-            expect(tcbbcode(bbcode)).toBe(`<div class="bbcode">${expected}</div>`);
-        });
+        ]))('| *%s* | `%s` | `%s` |', (description, bbcode, expected) => expect(tcbbcode(bbcode)).toBe(expected));
 
         test.each([
             '[b]example',
@@ -23,9 +21,7 @@ if (process.env.NODE_ENV === 'test') {
             '[color=skyblue]example[/color]',
             '[table][td][tr]example[/tr][/td][/table]',
             '[url=javascript:alert(\'example\')]example[/url]',
-        ])('%s throws', (bbcode) => {
-            expect(() => tcbbcode(bbcode)).toThrow();
-        });
+        ])('%s throws', bbcode => expect(() => tcbbcode(bbcode)).toThrow());
     });
 }
 
