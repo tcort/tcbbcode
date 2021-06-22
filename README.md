@@ -26,7 +26,6 @@ BBCode to HTML converter.
 | *Left* | `[left]example[/left]` | `<div style="text-align: left;">example</div>` |
 | *Right* | `[right]example[/right]` | `<div style="text-align: right;">example</div>` |
 | *Quote* | `[quote]example[/quote]` | `<blockquote>example</blockquote>` |
-| *Quote* | `[quote=Alice]example[/quote]` | `<blockquote><span>Alice</span> example</blockquote>` |
 | *Preformatted Text* | `[pre]example[/pre]` | `<pre>example</pre>` |
 | *Code* | `[code]example[/code]` | `<div><pre><code>example</code></pre></div>` |
 | *Code* | `[code=JavaScript]example[/code]` | `<div class="bbcode-code-lang-javascript"><pre><code>example</code></pre></div>` |
@@ -40,7 +39,6 @@ BBCode to HTML converter.
 | *list* | `[list][li]example[/li][/list]` | `<ul><li>example</li></ul>` |
 | *list* | `[ul][li]example[/li][/ul]` | `<ul><li>example</li></ul>` |
 | *list* | `[ol][li]example[/li][/ol]` | `<ol><li>example</li></ol>` |
-| *Spoiler* | `[spoiler]example[/spoiler]` | `<span class="bbcode-spoiler">example</span>` |
 | *Link* | `[url]https://example.com/[/url]` | `<a href="https://example.com/">https://example.com/</a>` |
 | *Link* | `[url=https://example.com/]example[/url]` | `<a href="https://example.com/">example</a>` |
 | *Image* | `[img]http://i.imgur.com/FXSBf8c.jpg[/img]` | `<img src="http://i.imgur.com/FXSBf8c.jpg" alt="FXSBf8c.jpg" />` |
