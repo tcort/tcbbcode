@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>tcbbcode</title>
+    </head>
+    <body>
+        <table>
+            <thead>
+                <tr>
+                    <th>Description</th>
+                    <th>Input</th>
+                    <th>Output</th>
+                    <th>Rendered</th>
+                </tr>
+            </thead>
+            <tbody id="demo"></tbody>
+        </table>
+        <script src="bbcode_examples.js"></script>
+        <script>
+            bbcode_examples.forEach(([ description, input, output ]) => {
+                const tr = document.createElement('tr');
+
+                const td_description = document.createElement('td');
+                td_description.innerText = description;
+                tr.appendChild(td_description);
+
+                const td_input = document.createElement('td');
+                td_input.innerText = input;
+                tr.appendChild(td_input);
+
+                const td_output = document.createElement('td');
+                td_output.innerText = output;
+                tr.appendChild(td_output);
+
+                const td_rendered = document.createElement('td');
+                td_rendered.innerHTML = output;
+                tr.appendChild(td_rendered);
+
+                document.getElementById('demo').appendChild(tr);
+
+            });
+        </script>
+    </body>
+</html>
