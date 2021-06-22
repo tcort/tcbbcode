@@ -19,6 +19,7 @@ if (process.env.NODE_ENV === 'test') {
             ['Italic', '[i]example[/i]','<span class="bbcode-i" style="font-style: italic;">example</span>'],
             ['Underline', '[u]example[/u]','<span class="bbcode-u" style="text-decoration: underline;">example</span>'],
             ['Strikethrough', '[s]example[/s]','<span class="bbcode-s" style="text-decoration: line-through;">example</span>'],
+            ['Subscript', '[sub]example[/sub]','<span class="bbcode-sub" style="vertical-align: sub; font-size: smaller;">example</span>'],
             ['Size', '[size=12]example[/size]','<span class="bbcode-size" style="font-size: 12pt;">example</span>'],
             ['Size', '[style size=12]example[/style]','<span class="bbcode-size" style="font-size: 12pt;">example</span>'],
             ['Color', '[color=red]example[/color]','<span class="bbcode-color" style="color: red;">example</span>'],
