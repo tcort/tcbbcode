@@ -22,9 +22,12 @@ BBCode to HTML converter.
 | *Color* | `[color=#FF0000]example[/color]` | `<span style="color: #ff0000;">example</span>` |
 | *Color* | `[style color=red]example[/style]` | `<span style="color: red;">example</span>` |
 | *Color* | `[style color=#ff0000]example[/style]` | `<span style="color: #ff0000;">example</span>` |
+| *Background Color* | `[bgcolor=red]example[/bgcolor]` | `<span style="background: red;">example</span>` |
+| *Background Color* | `[bgcolor=#ff0000]example[/bgcolor]` | `<span style="background: #ff0000;">example</span>` |
 | *Center* | `[center]example[/center]` | `<div style="text-align: center;">example</div>` |
 | *Left* | `[left]example[/left]` | `<div style="text-align: left;">example</div>` |
 | *Right* | `[right]example[/right]` | `<div style="text-align: right;">example</div>` |
+| *Justify* | `[justify]example[/justify]` | `<div style="text-align: justify;">example</div>` |
 | *Quote* | `[quote]example[/quote]` | `<blockquote>example</blockquote>` |
 | *Preformatted Text* | `[pre]example[/pre]` | `<pre>example</pre>` |
 | *Code* | `[code]example[/code]` | `<div><pre><code>example</code></pre></div>` |
@@ -45,6 +48,9 @@ BBCode to HTML converter.
 | *Image* | `[img=202x304]http://i.imgur.com/FXSBf8c.jpg[/img]` | `<img src="http://i.imgur.com/FXSBf8c.jpg" alt="FXSBf8c.jpg" width="202" height="304" />` |
 | *Image* | `[img width=202 height=304]http://i.imgur.com/FXSBf8c.jpg[/img]` | `<img src="http://i.imgur.com/FXSBf8c.jpg" alt="FXSBf8c.jpg" width="202" height="304" />` |
 | *Youtube* | `[youtube]dQw4w9WgXcQ[/youtube]` | `<div><iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>` |
+| *Horizontal Rule* | `[hr]` | `<hr/>` |
+| *Non-breaking Space* | `[nbsp]` | `&nbsp;` |
+| *Note* | `[note]example[/note]` | `<!-- example -->` |
 
 ### Notes for End Users
 
